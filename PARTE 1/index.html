@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <fieldset id="recuadro1">
+        <img src="https://delizia.bo/wp-content/uploads/2022/01/banner-productos-sin-fondo2.png" alt="">
+        <p>Producto 1</p>
+        <p>Precio:</p><p id="precio"></p>
+        <fieldset >
+            <legend>Cantidad</legend>
+            <select onchange="funcionCmbiarPrecio()" >
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="7">7</option>
+            </select>
+            <br>
+            <button onclick="agregarAlCarrito()">agregar</button>
+        </fieldset>
+        <button>siguiente</button>
+    </fieldset>
+
+<p>Total:</p><p id="total"></p>
+
+<fieldset id="recuadro2">
+    <legend> Carrito</legend>
+    <ul id="lista"></ul>
+</fieldset>
+<script src="algoritmo.js"></script>
+</body>
+</html>

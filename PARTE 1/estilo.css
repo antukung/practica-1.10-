@@ -1,0 +1,19 @@
+#recuadro1 {
+    background-color: gray;
+    border: red;
+    width: 300px;
+}
+
+#recuadro2 {
+    width: 300px;
+   
+}
+
+img {
+    width: 300px;
+}
+
+body {
+    place-content: center;
+    display: grid;
+}
