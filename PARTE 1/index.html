@@ -9,12 +9,12 @@
 </head>
 <body>
     <fieldset id="recuadro1">
-        <img src="https://delizia.bo/wp-content/uploads/2022/01/banner-productos-sin-fondo2.png" alt="">
-        <p>Producto 1</p>
-        <p>Precio:</p><p id="precio"></p>
+        <img id="imagen-producto"src="https://delizia.bo/wp-content/uploads/2022/01/banner-productos-sin-fondo2.png" alt="">
+        <p id="producto">Producto 1</p>
+        <p>Precio:</p><p id="precio">500</p>
         <fieldset >
             <legend>Cantidad</legend>
-            <select onchange="funcionCmbiarPrecio()" >
+            <select >
                 <option value="1">1</option>
                 <option value="3">3</option>
                 <option value="7">7</option>
@@ -22,7 +22,7 @@
             <br>
             <button onclick="agregarAlCarrito()">agregar</button>
         </fieldset>
-        <button>siguiente</button>
+        <button onclick="siguienteProducto()">siguiente</button>
     </fieldset>
 
 <p>Total:</p><p id="total"></p>
