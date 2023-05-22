@@ -1,8 +1,8 @@
 const recuadroInformativo= document.querySelector("#recuadro-informacion");
 const selectCamas= document.querySelector("#select-camas");
-const selectDias= document.querySelector("#select-dias");
-const selectIngreso=document.querySelector("#select-ingreso");
-const selectServiciosExtra= document.querySelector("#select-servicios-extra");
+const selectDias= "select-dias";
+const selectIngreso="select-ingreso";
+const selectServiciosExtra= "select-servicios-extra";
 const divTipo= document.querySelector ("#div-tipo")
 
 contadorClick= 0;
@@ -16,8 +16,8 @@ contadorClick= ++contadorClick;
             <option value="1">1</option>
             <option value="3">3</option>
             <option value="7">7</option>
-        </select>
-    `
+        </select>`
+    
             
             break;
         case 2:
@@ -37,7 +37,7 @@ contadorClick= ++contadorClick;
             <option value=" Desayuno">Desayuno</option>
             <option value=" Desayuno y almuerzo">Desayuno y almuerzo</option>
             <option value=" Desayuno, almuerzo y cena">Desayuno, almuerzo y cena</option>
-        </select>}`
+        </select>`
         
                         break;
 
