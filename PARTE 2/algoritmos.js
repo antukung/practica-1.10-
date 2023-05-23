@@ -1,47 +1,52 @@
 const recuadroInformativo= document.querySelector("#recuadro-informacion");
-const selectCamas= document.querySelector("#select-camas");
-const selectDias= "select-dias";
-const selectIngreso="select-ingreso";
-const selectServiciosExtra= "select-servicios-extra";
-const divTipo= document.querySelector ("#div-tipo")
+const select= document.querySelector("#select-camas");
+const legent= document.querySelector ("#legend")
+let textoComplementario="cantidad de camas";
 
 contadorClick= 0;
 function clickIngreso() {
 contadorClick= ++contadorClick;
     switch (contadorClick) {
         case 1:
-    divTipo.innerHTML=`<legend>Dias</legend>`
-    selectCamas.innerHTML=<select name="Dias" id="select-dias">
+    legent.innerHTML=`Cantidad de dias`;
+    select.innerHTML=`<select name="" id="select-dias">
             <option value="1">1</option>
             <option value="3">3</option>
             <option value="7">7</option>
-        </select>
-    
+            </select>`
+         textoComplementario="cantidad de dias ";
             
             break;
         case 2:
-            divTipo.innerHTML=`<legend> Ingresan</legend>}`
-            selectCamas.innerHTML=<select name="Ingresan" id="select-ingreso">
+            legent.innerHTML=`Dia de la semana`;
+            select.innerHTML=`<select name="" id="select-ingreso">
                 <option value="Lunes">Lunes</option>
                 <option value="Miercoles">Miercoles</option>
                 <option value="Sabado">Sabado</option>
-            </select>
-               
-                        
+                </select>"
+        `
+         textoComplementario="dia de la semana ";
             break;
         case 3:
-        divTipo.innerHTML=`<legend> Sevicios extra</legend>`
-        selectCamas.innerHTML=<select name="Servicios Extra" id="select-servicios-extra">
-            <option value=" Desayuno">Desayuno</option>
-            <option value=" Desayuno y almuerzo">Desayuno y almuerzo</option>
-            <option value=" Desayuno, almuerzo y cena">Desayuno, almuerzo y cena</option>
-        </select>
-        
-                        break;
+        legent.innerHTML=`Servicio extra`;
+        select.innerHTML=`<select name="" id="select-servicios-extra">
+            <option value="Desayuno">Desayuno</option>
+            <option value="Desayuno y almuerzo">Desayuno y almuerzo</option>
+            <option value="Desayuno, almuerzo y cena">Desayuno, almuerzo y cena</option>
+            </select>}`
+            textoComplementario="servicio extra ";
+                               break;
 
                 
         default:
+            alert ("ya hiciste todo")
         break;
+        
+                
+    
+
     }
-recuadroInformativo.innerHTML+= `<p> cantidad de camas"${(selectCamas.value)}", cantidad de dias"${(selectDias.value)}",dia de ingreso "${(selectIngreso.value)}", servicios extra${(selectServiciosExtra.value)} </p>`  
+
+recuadroInformativo.innerHTML+= `<p> ${textoComplementario}${(select.value)}</p>`  
+
 } 
